@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RankList"
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:textSize="30dp"
+            android:textIsSelectable="true"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="left|top" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rankicon"
+            android:src="@drawable/rankicon"
+            android:scaleType = "centerCrop"
+            android:alpha="0.45"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+            android:text="NO."
+            android:id="@+id/NOTEXT"
+            android:textSize="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_column="0" />
+
+            <TextView
+                android:text="Name"
+                android:id="@+id/NAMETEXT"
+                android:textSize="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_column="1" />
+
+            <TextView
+                android:text="Point"
+                android:id="@+id/POINTTEXT"
+                android:textSize="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_column="2" />
+
+            <TextView
+                android:text="Time"
+                android:id="@+id/TIMETEXT"
+                android:textSize="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_column="3" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
